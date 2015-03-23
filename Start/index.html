@@ -5,7 +5,10 @@
 	<script src="static/js/common/angular.js"></script>
 </head>
 <body>
-	<input ng-model="name" type="text" placeholder="Your name" />
-	<h1>Hello {{name}}</h1>
+	<div ng-controller="MyController">
+		<input ng-model="name" type="text" placeholder="Your name" />
+		<h1>Hello {{clock}}</h1>
+	</div>
+	<script src="static/js/logic/app.js"></script>
 </body>
 </html>
