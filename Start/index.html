@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html ng-app>
-<head>
-	<title>Simple app</title>
-	<script src="static/js/common/angular.js"></script>
-</head>
-<body>
-	<div ng-controller="MyController">
-		<input ng-model="name" type="text" placeholder="Your name" />
-		<h1>Hello {{clock}}</h1>
-	</div>
-	<script src="static/js/logic/app.js"></script>
-</body>
+<html ng-app="HelloAngular">
+	<head>
+	<meta charset="utf-8">
+		<script src="static/js/common/angular.js"></script>
+	</head>
+	<body>
+		<div ng-controller="helloAngular">
+			<input ng-model="greeting.text" />
+			<p>{{greeting.text}},Angular</p>
+			<hello></hello>
+		</div>
+		<script src="static/js/logic/app.js"></script>
+	</body>
 </html>
